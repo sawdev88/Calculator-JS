@@ -7,7 +7,7 @@ var
 function randomColor() {
   var randomNumber = Math.floor(Math.random() * colors.length);
   var randColor = colors[randomNumber];
-  console.log(randColor);
+
   document.body.style.background = randColor;
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].style.color = randColor;
