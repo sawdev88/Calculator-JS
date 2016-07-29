@@ -2,7 +2,7 @@ var
   input = document.getElementById('inputField'),
   buttons = document.querySelectorAll('button'),
   values = [],
-  colors = ['#FF5A5A', '#ad5aff', '#32ADFF'];
+  colors = ['#FF5A5A', '#32ADFF', '#ad5aff'];
 
 function randomColor() {
   var randomNumber = Math.floor(Math.random() * colors.length);
