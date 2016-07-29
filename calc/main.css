@@ -38,15 +38,6 @@ h1 {
   color: #333;
 }
 
-.buttonClear {
-  overflow: hidden;
-  float: right;
-}
-
-.calcButtons {
-  clear: both;
-}
-
 .container button {
   float: left;
   width: 40px;
@@ -62,4 +53,8 @@ h1 {
 .container button:focus {
   outline: none;
   border: 1px solid orange;
+}
+
+.hide {
+  visibility: hidden;
 }
