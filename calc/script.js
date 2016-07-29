@@ -18,7 +18,6 @@ for (var i = 0; i < buttons.length; i++) {
     }else {
       arr.push(this.value);
       input.innerHTML += this.value;
-      console.log(this.value);
     }
 
   })
