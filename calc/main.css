@@ -27,7 +27,7 @@ h1 {
 }
 
 #inputField {
-  margin: 24px auto;
+  margin: 32px auto 40px;
   width: 98%;
   height: 26px;
   background: #fff;
@@ -52,7 +52,7 @@ h1 {
 
 .container button:focus {
   outline: none;
-  border: 1px solid orange;
+  border: 2px solid orange;
 }
 
 .hide {

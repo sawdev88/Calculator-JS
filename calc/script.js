@@ -1,7 +1,20 @@
 var
   input = document.getElementById('inputField'),
   buttons = document.querySelectorAll('button'),
-  values = [];
+  values = [],
+  colors = ['#FF5A5A', '#ad5aff', '#32ADFF'];
+
+function randomColor() {
+  var randomNumber = Math.floor(Math.random() * colors.length);
+  var randColor = colors[randomNumber];
+  console.log(randColor);
+  document.body.style.background = randColor;
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].style.color = randColor;
+  }
+}
+
+randomColor();
 
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', function () {
