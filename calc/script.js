@@ -1,5 +1,5 @@
 var
-  input = document.getElementById('inputField'),
+  display = document.getElementById('displayField'),
   buttons = document.querySelectorAll('button'),
   values = [],
   colors = ['#FF5A5A', '#32ADFF', '#ad5aff'];
@@ -14,6 +14,10 @@ function randomColor() {
   }
 }
 
+function clearArray(arr) {
+  arr.splice(0);
+}
+
 randomColor();
 
 for (var i = 0; i < buttons.length; i++) {
@@ -25,20 +29,20 @@ for (var i = 0; i < buttons.length; i++) {
       var answer = eval(equals);
 
       // Display answer
-      input.innerHTML = eval(answer);
+      display.innerHTML = eval(answer);
 
       // Clear array to prevent OOO and store answer as first param
-      values = [];
+      clearArray(values);
       values.push(answer);
 
     } else if (this.value === 'clear') {
       // Clear all info
-      values = [];
-      input.innerHTML = '';
+      clearArray(values);
+      display.innerHTML = '';
     }else {
       // Add values to array and display
       values.push(this.value);
-      input.innerHTML += this.value;
+      display.innerHTML += this.value;
     }
 
   })
