@@ -25,12 +25,15 @@ h1 {
   border-radius: 5px;
 }
 
-.input {
+#inputField {
   margin: 24px auto;
   width: 98%;
   height: 26px;
   background: #fff;
   border-radius: 2px;
+  text-align: right;
+  padding: 2px;
+  overflow-x: scroll;
 }
 
 .buttonClear {
